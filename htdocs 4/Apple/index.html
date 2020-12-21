@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple iPhone</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icon for web -->
+    <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"/>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- map -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap" defer></script>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body onload="load()" >
+
+      <header>
+            <nav class="menu">
+                  <ul class="menu">
+                        <li>
+                              <a href="#home">Home</a>
+                        </li>
+                        <li>
+                              <a href="#overview">Overview</a>
+                        </li>
+                        <li>
+                              <a href="#Information">Information</a>
+                        </li>
+                        <li>
+                              <a href="#features">Features</a>
+                        </li>
+                        <li>
+                              <a href="#order">Order</a>
+                        </li>
+                        <li>
+                              <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                              <a href="http://localhost:8888/">Login</a>
+                        </li>
+                        <li>
+                              <a id="ordered" href="#yorder" onclick="order_info()">Your Order</a>
+                        </li>
+                  </ul>
+                  <a href="#" id="toggle-btn">APPLE</a>
+            </nav>
+      </header>
+
+      <!-- content -->
+      
+      <a name="home"></a>
+      <div class="section-hero">
+            <div class="container">
+                  <h1>Welcome!</h1>
+                  <img src="https://1000logos.net/wp-content/uploads/2017/02/iPhone_logo.png" alt="logo" style="width: 200px;">
+            </div>
+      </div>
+
+      <!-- overview -->
+
+      <a name="overview"></a>
+      <div id="overview" class="section">
+            <div class="container">
+                  <div class="overview-content">
+                  <div>
+                        <h2>Overview</h2>
+                        <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007.</p>
+                        <p>The iPhone is one of the two largest smartphone platforms in the world alongside Google's Android, forming a large part of the luxury market.</p>
+                        <button type="button" onclick="link(this)">View More</button>
+                  </div>
+
+                  <div>
+                        <img src="https://mocah.org/uploads/posts/123553-iphone-x-iphone-10-hd-4k.png" alt="">
+                  </div>
+
+                  </div>
+            </div>
+      </div>
+
+
+      <!-- popup -->
+
+<section class="product container" id="Information">
+      <div class="max-width">
+            <h2 class="title">Information about iPhones</h2>
+            <div class="product-content">
+                  <div class="card1" data-aos="fade-right" data-aos-duration="1000"><img src="https://object.pscloud.io/cms/cms/Uploads/11_black.jpg">
+                        <div class="info"><p>iPhone 11</p>
+                        <br><span id="price">69 980 ₽ </span></div>
+                        <a onclick="order()" href="#Information11">Information</a>
+                  </div>
+                  <div class="card2" data-aos="fade-right" data-aos-duration="1000"><img src="https://cdn1.ozone.ru/s3/multimedia-5/wc1200/6022115633.jpg">
+                  <div class="info"><p>iPhone 11 Pro</p>
+                        <br><span id="price">96 990 ₽</span></div>
+                        <a onclick="order()" href="#Information11PRO">Information</a>
+                </div>
+                  <div class="card3" data-aos="fade-left" data-aos-duration="1000"><img src="https://cdn1.ozone.ru/s3/multimedia-n/wc1200/6025763819.jpg">
+                  <div class="info"><p>iPhone 12</p>
+                      <br><span id="price">94 980 ₽ </span></div>
+                      <a onclick="order()" href="#Information12">Information</a>
+                </div>
+                  <div class="card4" data-aos="fade-left" data-aos-duration="1000"><img src="https://cdn1.ozone.ru/s3/multimedia-w/wc1200/6025868696.jpg">
+                  <div class="info"><p>iPhone 12 Pro Max</p>
+                      <br><span id="price">139 980 ₽ </span></div>
+                      <a onclick="order()" href="#Information12PRO">Information</a>
+                </div>
+            </div>
+
+            <div class="order container" id="information11">
+                  <div class="order-content">
+                        <img onclick="closed()" class="closed" src="https://w7.pngwing.com/pngs/510/996/png-transparent-computer-icons-check-mark-symbol-cross-miscellaneous-angle-cross-thumbnail.png">
+                        <h1>Apple iPhone 11<br>Смартфон сертифицирован.</h1>
+                        <img style="width: 400px" src="https://object.pscloud.io/cms/cms/Uploads/11_black.jpg"><br>
+                        Смартфон Apple iPhone 11 - ничего лишнего. Только самое. Новая система двух камер. Аккумулятор на целый день без подзарядки. Самое прочное стекло и самый быстрый процессор iPhone. Шесть отличных новых цветов. Впечатляющий ЖК‑дисплей Liquid Retina с диагональю 6,1 дюйма.2 Защита от воды при погружении на глубину до 2 метров до 30 минут. Сверхширокоугольная камера (13 мм). Угол обзора 120° — область изображения в четыре раза больше. Широкоугольная камера (26 мм). Поддержка Focus Pixels на всей матрице. При слабом освещении объектив автоматически фокусируется до трёх раз быстрее. Снимайте видео 4K с частотой 60 кадров/с на любую камеру. Сверхширокоугольная камера, с которой область изображения в четыре раза больше. Редактировать видео — применять фильтры, поворачивать и кадрировать — так же легко, как и фотографии. Новый Ночной режим автоматически улучшает фотографии, снятые при слабом освещении, — будь то костёр на берегу озера или ужин при свечах. Аккумулятор на целый день без подзарядки. A13 Bionic — самый быстрый процессор iPhone. Поддержка быстрой зарядки с помощью адаптера 18 Вт (продаётся отдельно). Face ID — исключительно надёжная технология аутентификации по лицу. Изображение вашего лица нигде не хранится и никуда не передаётся. Эта технология надёжнее, чем Touch ID.
+                        <a onclick="success()" href="#Information">Back to Apple page</a>
+                  </div>
+            </div>
+
+            <div class="order container" id="Information11PRO">
+                   <div class="order-content">
+                        <img onclick="closed()" class="closed" src="https://w7.pngwing.com/pngs/510/996/png-transparent-computer-icons-check-mark-symbol-cross-miscellaneous-angle-cross-thumbnail.png">
+                        <h1>Apple iPhone 11 Pro<br>Смартфон сертифицирован.</h1>
+                        <div class="column">
+                        <img style="width: 400px" src="https://cdn1.ozone.ru/s3/multimedia-5/wc1200/6022115633.jpg"><br>
+                        Совершенно новая система трёх камер. Целый день без подзарядки. Самый быстрый процессор iPhone. И самый яркий дисплей iPhone. Это уровень Pro.<br>
+Снимайте потрясающие фото и видео на любую из трёх камер: сверхширокоугольную, широкоугольную или телефото. Делайте красивейшие снимки при слабом освещении в Ночном режиме. Смотрите фильмы и сериалы в формате HDR на самом ярком дисплее iPhone — Super Retina XDR. Открывайте новые возможности игр, дополненной реальности и фотосъёмки благодаря непревзойдённой производительности процессора A13 Bionic. Устройство работает без подзарядки целый день и ещё лучше защищено от воды. Всё это — новый iPhone. Теперь на уровне Pro.<br>
+· OLED‑дисплей Super Retina XDR 5,8 дюйма<br>
+· Защита от воды и пыли (при погружении на глубину до 4 метров длительностью до 30 минут (IP68))<br>
+· Система трёх камер 12 Мп: сверхширокоугольная, широкоугольная и телефото; Ночной режим, режим «Портрет», поддержка видео 4K с частотой до 60 кадров/с<br>
+· Фронтальная камера TrueDepth 12 Мп с режимом «Портрет», поддержкой видео 4K и замедленного видео<br>
+· Face ID для безопасной аутентификации и Apple Pay<br>
+· Процессор A13 Bionic с системой Neural Engine 3-го поколения<br>
+· Быстрая зарядка с помощью адаптера питания 18 Вт (входит в комплект поставки)<br>
+· Беспроводная зарядка<br>
+· iOS 13 с тёмным режимом, новыми инструментами редактирования фото и видео и совершенно новыми функциями защиты конфиденциальности<br>
+</div>
+                        <a onclick="success()" href="#Information">Back to Apple page</a>
+                  </div>
+            </div>
+
+
+                        <div class="order container" id="Information12">
+                  <div class="order-content">
+                        <img onclick="closed()" class="closed" src="https://w7.pngwing.com/pngs/510/996/png-transparent-computer-icons-check-mark-symbol-cross-miscellaneous-angle-cross-thumbnail.png">
+                        <h1>Apple iPhone 12<br>Смартфон сертифицирован.</h1>
+                        <img style="width: 400px" src="https://cdn1.ozone.ru/s3/multimedia-n/wc1200/6025763819.jpg">
+                        iPhone 12. Во-первых, это быстро.<br>
+
+iPhone 12 поражает возможностями. A14 Bionic, самый быстрый процессор iPhone. Новая система двух камер. И великолепный дисплей Super Retina XDR, на котором видно каждую деталь.<br>
+
+Это iPhone 12. Великолепный яркий дисплей Super Retina XDR 6,1 дюйма. Передняя панель Ceramic Shield, с которой риск повреждений дисплея при падении в 4 раза ниже. Потрясающее качество снимков при слабом освещении благодаря Ночному режиму на всех камерах. Съёмка, монтаж и воспроизведение видео кинематографического качества в стандарте Dolby Vision. Мощный процессор A14 Bionic. И новые аксессуары MagSafe, которые мгновенно примагничиваются и обеспечивают более быструю беспроводную зарядку.3 Другими словами, вас ждут яркие открытия.<br>
+
+• Дисплей Super Retina XDR 6,1 дюйма;<br>
+• Невероятно прочная передняя панель Ceramic Shield;<br>
+• A14 Bionic, самый быстрый процессор iPhone;<br>
+• Передовая система двух камер 12 Мп: сверхширокоугольная и широкоугольная; ночной режим, технология Deep Fusion, режим Smart HDR 3, съёмка HDR‑видео 4K в стандарте Dolby Vision;<br>
+• Фронтальная камера TrueDepth 12 Мп: Ночной режим, съёмка HDR‑видео 4K в стандарте Dolby Vision;<br>
+• Надёжная защита от воды (IP68);<br>
+• Поддержка аксессуаров MagSafe: мгновенно примагничиваются и обеспечивают более быструю беспроводную зарядку;<br>
+• iOS 14 с новыми виджетами для главного экрана, библиотекой приложений, блиц‑приложениями и другими впечатляющими возможностями.<br>
+                        <a onclick="success()" href="#Information">Back to Apple page</a>
+                  </div>
+            </div>
+
+                        <div class="order container" id="Information12PRO">
+                  <div class="order-content">
+                        <img onclick="closed()" class="closed" src="https://w7.pngwing.com/pngs/510/996/png-transparent-computer-icons-check-mark-symbol-cross-miscellaneous-angle-cross-thumbnail.png">
+                        <h1>Apple iPhone 12 Pro Max<br>Смартфон сертифицирован.</h1>
+                        <img style="width: 400px" src="https://cdn1.ozone.ru/s3/multimedia-w/wc1200/6025868696.jpg">
+                        Встречайте iPhone 12 Pro Max.<br>
+Это iPhone 12 Pro Max. A14 Bionic, самый быстрый процессор iPhone. Система камер Pro, которая обеспечивает потрясающее качество снимков при слабом освещении. И увеличенный дисплей Super Retina XDR. Это новая эра для iPhone.<br>
+Это iPhone 12 Pro Max. Увеличенный дисплей Super Retina XDR 6,7 дюйма. Передняя панель Ceramic Shield, с которой риск повреждений дисплея при падении в 4 раза ниже. Потрясающее качество снимков при слабом освещении благодаря лучшей на iPhone системе камер Pro. <br>Оптический зум с диапазоном 5x. Съёмка, монтаж и воспроизведение видео кинематографического качества в стандарте Dolby Vision. Ночной режим для портретов и дополненная реальность нового уровня благодаря сканеру LiDAR. Мощный процессор A14 Bionic. И новые аксессуары MagSafe, которые мгновенно примагничиваются и обеспечивают более быструю беспроводную зарядку.Это впечатляющие возможности.<br>
+• Дисплей Super Retina XDR 6,7 дюйма<br>
+• Невероятно прочная передняя панель Ceramic Shield<br>
+• A14 Bionic, самый быстрый процессор iPhone<br>
+• Система камер Pro 12 Мп: сверхширокоугольная, широкоугольная и телефото; диапазон оптического зума 5x; Ночной режим, технология Deep Fusion, режим Smart HDR 3, фото в формате Apple ProRAW4, съёмка HDR‑видео 4K в стандарте Dolby Vision<br>
+• Сканер LiDAR для портретов в Ночном режиме и дополненной реальности нового уровня
+• Фронтальная камера TrueDepth 12 Мп: Ночной режим, съёмка HDR‑видео 4K в стандарте Dolby Vision<br>
+• Надёжная защита от воды (IP68)<br>
+• Поддержка аксессуаров MagSafe: мгновенно примагничиваются и обеспечивают более быструю беспроводную зарядку<br>
+• iOS 14 с новыми виджетами для главного экрана, Библиотекой приложений, блиц‑приложениями и другими впечатляющими возможностями<br>
+                        <a onclick="success()" href="#information">Back to Apple page</a>
+                  </div>
+            </div>
+      </div>
+
+    </section>
+
+      <!-- about -->
+
+
+      <div id="about" class="section">
+            <div class="container">
+                  <h2>iPhone 12</h2>
+                  <h3>Blast past fast.</h3>
+                  <p>5G speed. A14 Bionic, the fastest chip in a smartphone.
+                        An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all.</p>
+                  <img src="https://9to5mac.com/wp-content/uploads/sites/6/2020/10/Screen-Shot-2020-10-13-at-13.47.00-PM-1.png" alt="">
+            </div>
+      </div>
+
+
+      <!-- features -->
+      <a name="features"></a>
+      <div id="features" class="section">
+            <div class="container">
+                  <div class="features-content">
+                        <div>
+                              <img src="https://i.guim.co.uk/img/media/4899c5f4db7191fdfbc80c40b197ac92aa66a529/185_175_2510_1506/master/2510.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=901b400abdc98ac2928514d7f227b829" alt="">
+                        </div>
+                        <div>
+                              <h2>Features</h2>
+                              <h4>&#10148; A14 Bionic chip</h4>
+                              <p>A14 Bionic is the fastest chip in a smartphone. And it pushes what’s possible. Like crunching trillions of operations on the Neural Engine. Or shooting in Dolby Vision — even pro movie cameras can’t do that. It’s superefficient for great battery life. And it’s ahead of its time, prepared to power pretty much anything that comes next.
+                              </p>
+                              <h4>&#10148; Super Retina XDR display </h4>
+                              <p>Vastly more contrast. Incredible color accuracy. A huge jump in pixel density. Wow. Just wow. OLED delivers brighter brights, darker blacks, and higher resolution for everything you look at. This is the best iPhone display we’ve ever made, and it goes all the way to the edge.</p>
+                              <h4>&#10148; Camera</h4>
+                              <p>Both the Wide and Ultra Wide cameras now have Night mode — and it’s better than ever at capturing incredible low-light shots. The new Wide camera brings in 27 percent more light. So whether you take photos by day or by moonlight, you’ll get a level of detail and color that wasn’t possible before.</p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <!-- order -->
+
+      <a name="order"></a>
+      <div id="order" class="section">
+            <div class="container">
+                  <h2>Order your iPhone 12 right now!</h2><br> <br>
+                  <p>As part of our efforts to reach our environmental goals, iPhone 12 does not include a power adapter or EarPods. Included in the box is a USB‑C to Lightning cable that supports fast charging and is compatible with USB‑C power adapters and computer ports.</p>
+                  <br>
+                  <br>
+                  <button type="button" onclick="popup()">Order</button>
+                  
+                  
+            </div>
+      </div>
+      
+
+      <!-- Model choosing -->
+
+      <div class="popup">
+            <div class="popup-content">
+                  <select class="select" name="model" id="model" onchange="choose()">
+                        <option selected hidden>Choose your model</option>
+                        <option value="i12Pro">iPhone 12 Pro</option>
+                        <option value="i12">iPhone 12</option>
+                        <option value="i11">iPhone 11</option>
+                  </select> <br>
+
+                  <div class="gallery"> 
+                        <img id="gallery" src="" alt="">
+                  </div>
+                  
+                  <!-- Storage part -->
+                  <div class="storage11">
+                        <input class="radio_input" id="11storage64" type="radio" name="storage">
+                        <label class="radio_label" for="11storage64">64GB</label>
+                        <input class="radio_input" id="11storage128" type="radio" name="storage">
+                        <label class="radio_label" for="11storage128">128GB</label>
+                        <input class="radio_input" id="11storage256" type="radio" name="storage">
+                        <label class="radio_label" for="11storage256">256GB</label>
+                  </div>
+                  <div class="storage12">
+                        <input class="radio_input" id="12storage64" type="radio" name="storage">
+                        <label class="radio_label" for="12storage64">64GB</label>
+                        <input class="radio_input" id="12storage128" type="radio" name="storage">
+                        <label class="radio_label" for="12storage128">128GB</label>
+                        <input class="radio_input" id="12storage256" type="radio" name="storage">
+                        <label class="radio_label" for="12storage256">256GB</label>
+                  </div>
+                  <div class="storage12Pro">
+                        <input class="radio_input" id="storage1282" type="radio" name="storage">
+                        <label class="radio_label" for="storage1282">128GB</label>
+                        <input class="radio_input" id="storage2562" type="radio" name="storage">
+                        <label class="radio_label" for="storage2562">256GB</label>
+                        <input class="radio_input" id="storage512" type="radio" name="storage">
+                        <label class="radio_label" for="storage512">512GB</label>
+                  </div>  
+
+                  <!-- Color part -->
+                  <div class="color12Pro">
+                        <input class="color_input" id="silver" type="radio" name="colour">
+                        <label class="color_label" for="silver" style="background-color: #e3e4df;" onclick="silver()"></label>
+                        <input class="color_input" id="graphite" type="radio" name="colour">
+                        <label class="color_label" for="graphite" style="background-color: #52514d;" onclick="graphite()"></label>
+                        <input class="color_input" id="gold" type="radio" name="colour" >
+                        <label class="color_label" for="gold" style="background-color:#fcebd3;" onclick="gold()"></label>
+                        <input class="color_input" id="pacific_blue" type="radio" name="colour">
+                        <label class="color_label" for="pacific_blue" style="background-color: #2d4e5e;" onclick="pacific_blue()"></label>
+                        
+                  </div>
+                  
+                  <div class="color12">     
+                        <input class="color_input" id="black" type="radio" name="colour">
+                        <label class="color_label" for="black" style="background-color: #25212b;" onclick="black()"></label>
+                        <input class="color_input" id="white" type="radio" name="colour">
+                        <label class="color_label" for="white" style="background-color: #f9f6ef;" onclick="white()"></label>
+                        <input class="color_input" id="red" type="radio" name="colour" >
+                        <label class="color_label" for="red" style="background-color:#d82e2e;" onclick="red()"></label>
+                        <input class="color_input" id="green" type="radio" name="colour">
+                        <label class="color_label" for="green" style="background-color: #d8efe5;" onclick="green()"></label>
+                        <input class="color_input" id="blue" type="radio" name="colour">
+                        <label class="color_label" for="blue" style="background-color: #023b63;" onclick="blue()"></label>
+                  </div>
+
+                  <div class="color11">
+                        <input class="color_input" id="purple" type="radio" name="colour">
+                        <label class="color_label" for="purple" style="background-color: #D1CDDA;" onclick="purple11()"></label>
+                        <input class="color_input" id="green" type="radio" name="colour">
+                        <label class="color_label" for="green" style="background-color: #AEE1CD;" onclick="green11()"></label>
+                        <input class="color_input" id="yellow" type="radio" name="colour">
+                        <label class="color_label" for="yellow" style="background-color: #FFE681;" onclick="yellow11()"></label>
+                        <input class="color_input" id="white" type="radio" name="colour">
+                        <label class="color_label" for="white" style="background-color: #F9F6EF;" onclick="white11()"></label>
+                        <input class="color_input" id="black" type="radio" name="colour">
+                        <label class="color_label" for="black" style="background-color: #1F2020;" onclick="black11()"></label>
+                        <input class="color_input" id="red" type="radio" name="colour" >
+                        <label class="color_label" for="red" style="background-color:#BA0C2E;" onclick="red11()"></label>
+                  </div>
+                  
+                  <!-- Other part -->
+                  <img id="back" onclick="close_popup()" src="https://img.icons8.com/ios/452/back--v1.png" alt="back">
+                  <label id="price" class="price"></label>
+                  <label class="continue" onclick="continue_btn()">Continue</label>
+
+
+            </div>
+      </div>
+
+      <!-- User info  -->
+
+
+      <div class="pop">
+            <div class="pop_content">
+                  <form id="form" action="/" method="GET">
+                        <input oninput="compare(fname.value,lname.value,mail.value,city.value,tel.value)" id="fname" type="text" placeholder="First Name" maxlength="20" >
+                        <input oninput="compare(fname.value,lname.value,mail.value,city.value,tel.value)" id="lname" type="text" placeholder="Last Name" maxlength="20" > 
+                        <input oninput="compare(fname.value,lname.value,mail.value,city.value,tel.value)" id="mail" type="email" placeholder="Mail" >
+                        <input oninput="compare(fname.value,lname.value,mail.value,city.value,tel.value)" id="city" type="text" placeholder="City" maxlength="20" >
+                        <input oninput="compare(fname.value,lname.value,mail.value,city.value,tel.value)" id="tel" type="tel" placeholder="Mobile Number" maxlength="12" >
+                  </form>
+                  
+                  <p class="msg">Fill out the form to confirm</p>
+
+                  <img id="back" onclick="back()" src="https://img.icons8.com/ios/452/back--v1.png" alt="back">
+                  <button type="submit" class="confirm" onclick="confirm(fname.value,lname.value,mail.value,city.value,tel.value)" disabled >Confirm</button>
+                  
+            </div>
+      </div>
+
+      <!-- Order info -->
+
+      <div class="order_info">
+            <div class="order_content">
+                  <img onclick="exit()" id="close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAV1BMVEX///9/f393d3d5eXnU1NTLy8t8fHx1dXXJycnT09PX19ehoaHNzc3Q0NC3t7eqqqre3t6/v7/09PSysrLt7e2QkJDn5+eWlpaHh4ecnJylpaXw8PC7u7sPt6SxAAAFCklEQVR4nO2d2XarMAxFS0hNmwkyD+3/f+eFkgli7OMh2L7r7Ic8avkgCRmQlY8PQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQ4pndclVeynW18WhzU61rm6vlzqNNWxZ7kedC1D/Z5eDJ5uGSXW2K/cKTTVuq00RkN0Qx9+HHzbx4sjk5VR5sWrN6WktDnrkvp6qtPCOKXw8rtaScZD1EPnO0OctF3+ik9LJaC1YvAhs3ukmc5RKbk5WnFZsuppAspl7O1MHmVHbRsqxwjQw7pGtxkziVebDh5HHdMF/yy+0SqNIQba/ap9e1Y+xf7ggPiXZeHPRgfQfbe149wGF4ObXEbwuLAzl4tehrN4HzqVKYTcwDdaYSmOXj7222SoXmuTicg6297VtUqLgMp2HrRbNAVYZojbi8Sccwc41Cs6KhuMlcFc7fpmQInQ+NAlUTomF8uNIuCi8aWg/WtsbfuOkSx0AiYsppL2jHjzZKM7BoIAKz7Oftil44IxKBXNTnYI04j6CoTyV/tOhL1EUXkIM1RZAH/SPiRJ1ETKA4jqSpyw5SqM5F9VbtoTBAFjZgtwhVLkI5GORGemXhuEDwEk0CvlFcgEuUS8RyMCtCPP3e+QQDVSYRDdGv0VV1sJcIejDI+4sOaKD2H6aSEQh7sZeLYJmIQWAtEdrcdIsGmINF4By8gRaNR6CilTQKDzYsMC/eJSZRJrqY5SKag5GEaItJ0UDrYEQebMCLBrpVi0wg7sXfND3YgErEBEaVgzfAogEJjNCDDWAupisQDlStwChDtAXcwKmJZasmx0MuxrNVkwNu4BQejFygcy7GnIM3nCTGexd9xqFopCHQwYupCLSWGHeZ6GJVNGIvE10scjGdEG0xDtQUykQXQ4npCTTMxdRCtMUgF+PfqslRt749kScYoi1b7CuxGL9nzRNTTKBls2YEgC9+G8J9xnYBfPF79WKCEsEXv3cvJheo4MeXdCUa5OBdYpgzFZYY5eCNlHLRMAfvXkwmUI1z8C4xES9ahWhLGoFq7cFUJDoJTCEXLcpET2LkXnTIwRvOp1DfimWZ6Hkx4kB1zMH4JXoI0ZZY76jeBMYqEcxBsP09wkBFm/E05xbvEqO7o+LtlC6N0wEB76J/H1/AV8VxSTRrabZtnA6IaTsl2qwZTS6aHytILBdtWprNG6cDYtfS7HbaZlRsT74kE6j2B0MSkehy8iWJouF28sXutM2ouJ4+szltMyoVuP0aPiCJbuACDTTbYE9CyhOgWLOmyHzO88PRzv5oBaq/0WO5GGDuR80BuvzaNhJMYjH+iCFwpgJwSBnKxRBO3ECXHumTwbw4fiYipRBs5UIkBniSAs4vwa1cgMR8/PGQ+hlDBoMC9Bs4Mf50SP2cKJNeNa0XI5wTZdjSrNvABZgTpelZM55loSkaAXrfvpQrKsyHdag3cAHaF5VzE606fpW5GGBu4sdpOEwtO34VEkWIAabr4WGjtvNkhotGmB7bIR869GwPe9HjunGW8luD08mXAYlFoHc1pSxOHU++SHvDA4z2vDJ/XY7zTCdJLuZBnn9byl6gCuH+Xuxb9BK8CDawvGEpntwoiqOP/zLYHZ9n2edi6cGmC+vT398YNP9jcPT1Smx2FDejp7Unmy5U6/J8nm+9/hfFbrmdn8/lOsTrGUIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEkP+cf/DVMOvm1wvRAAAAAElFTkSuQmCC" alt="">
+                  
+                  <div class="info">
+                        <label for="info1">First Name:</label>
+                        <h3 id="info1">asd</h3>
+                        <label for="info2">Last Name:</label>
+                        <h3 id="info2">asd</h3>
+                        <label for="info3">E-Mail:</label>
+                        <h3 id="info3">asd</h3>
+                        <label for="info4">City:</label>
+                        <h3 id="info4">asd</h3>
+                        <label for="info5">Mobile:</label>
+                        <h3 id="info5">asd</h3>
+                  </div>
+
+                  <h2 id="info6">asd</h2>
+
+                  <img id="ordrd_img" src="" alt="">
+
+                  <button id="cancel" onclick="cancel()">Cancel Order</button>
+                  
+                  
+            </div>
+      </div>
+
+      <!-- Footer -->
+      <a name="contact"></a>
+      <div class="section" id="footer">
+            
+            <div class="main-content">
+                  <div class="left box">
+                        <h2>About us</h2>
+                        <div class="content">
+                              <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops and sells consumer electronics, computer software, and online services. It is considered one of the Big Five companies in the U.S. information technology industry, along with Amazon, Google, Microsoft, and Facebook.</p>
+                              <div class="social">
+                                    <a href="https://www.facebook.com/apple/"><span class="fab fa-facebook-f"></span></a>
+                                    <a href="https://twitter.com/apple/"><span class="fab fa-twitter"></span></a>
+                                    <a href="https://www.instagram.com/apple/"><span class="fab fa-instagram"></span></a>
+                                    <a href="https://www.youtube.com/user/Apple"><span class="fab fa-youtube"></span></a>
+                                    <a href="https://www.apple.com"><span class="fa fa-globe"></span></a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="center box">
+                        <h2>Address</h2>
+                        <div class="content">
+                              <div class="place">
+                                    <span class="fas fa-map-marker-alt"></span>
+                                    <span class="text">Cupertino, California, United States</span>
+                              </div>
+                              <div class="phone">
+                                    <span class="fas fa-phone-alt"></span>
+                                    <span class="text">(408) 996–1010</span>
+                              </div>
+                              <div class="email">
+                                    <span class="fas fa-envelope"></span>
+                                    <span class="text">appleid@id.apple.com</span>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="right box"> 
+                        <h2>Map</h2>
+                        <div class="content">
+                              <div id="map"></div>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
